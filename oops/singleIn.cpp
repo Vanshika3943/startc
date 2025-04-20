@@ -5,7 +5,7 @@ class Parent{
     public:
     string name="shubhi";
     void print(){
-        cout<<"heeloo"<<endl;
+        cout<<"helo"<<endl;
     }
 };
 
