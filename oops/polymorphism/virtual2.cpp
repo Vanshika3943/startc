@@ -10,7 +10,7 @@ class CWH{
         title=s;
         rating=r;
     }
-    void display();
+    virtual void display();
 };
 
 class CWHvideo:public CWH{
