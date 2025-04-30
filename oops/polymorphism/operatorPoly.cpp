@@ -1,26 +1,30 @@
-#include<iostream> //operator overloading
+#include <iostream> //operator overloading
 using namespace std;
-class Complex{
+class Complex
+{
     int real, img;
-    public:
-    Complex(int real,int img){
-        this->real=real;
-        this->img=img;
+
+public:
+    Complex(int real, int img)
+    {
+        this->real = real;
+        this->img = img;
     }
-    void display(){
-        cout<<real<<" + "<<img<<"i"<<endl;
+    void display()
+    {
+        cout << real << " + " << img << "i" << endl;
     }
 
-    Complex operator+(Complex &C){
-        return Complex(real+C.real,img+C.img);
+    Complex operator+(Complex &c)
+    {
+        return Complex(real + c.real, img + c.img);
     }
-
-
 };
 
-int main(){
-    Complex C1(3,4);
-    Complex C2(2,3);
-    Complex C3= C1+C2;
-    C3.display();
+int main()
+{
+    Complex c1(3, 4);
+    Complex c2(2, 3);
+    Complex c3 = c1 + c2;
+    c3.display(); // output: 5 + 7i
 }
