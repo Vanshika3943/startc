@@ -28,7 +28,7 @@ int main()
     Base obj_base;
     Derived obj_deri;
     base_pointer = &obj_deri;
-    base_pointer->display();
+    base_pointer->display();   //displaying derived class
 
     return 0;
 }
