@@ -40,8 +40,8 @@ public:
         }
         else
         {
+            throw "insufficient balance";
         }
-        throw "insufficient balance";
     }
 };
 
